@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 19:12:22 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/09/18 10:54:10 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/09/18 18:46:44 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,7 @@ class Zombie {
  private:
   std::string name;
 };
+
+Zombie *zombieHorde(int N, std::string name);
 
 #endif
