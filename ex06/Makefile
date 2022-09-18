@@ -6,11 +6,11 @@
 #    By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/16 11:44:38 by lschrafs          #+#    #+#              #
-#    Updated: 2022/09/17 19:19:18 by lschrafs         ###   ########.fr        #
+#    Updated: 2022/09/18 16:17:48 by lschrafs         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = harl_filter
+NAME = harlFilter
 COMPILER = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
