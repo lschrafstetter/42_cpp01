@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 19:17:27 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/09/18 12:17:20 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/09/20 08:32:11 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class HumanA {
   HumanA(std::string name, Weapon &weapon);
   ~HumanA();
 
-  std::string getName();
+  std::string getName() const;
 
   void setName(std::string name);
   void setWeapon(Weapon &weapon);
@@ -30,7 +30,7 @@ class HumanA {
 
  private:
   std::string name;
-  Weapon *weapon;
+  Weapon &weapon;
 };
 
 #endif

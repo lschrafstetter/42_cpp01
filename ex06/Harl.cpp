@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 19:18:37 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/09/18 16:36:24 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/09/20 08:34:25 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Harl::Harl() {}
 Harl::~Harl() {}
 
 void Harl::filter(std::string level) {
-  std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+  std::string levels[4] = {"ERROR", "WARNING", "INFO", "DEBUG"};
 
   int i;
   for (i = 0; i < 4; i++) {
@@ -26,20 +26,20 @@ void Harl::filter(std::string level) {
 
   switch (i) {
     case 3:
-			std::cout << "[ ERROR ]" << std::endl;
-      error();
+			std::cout << "[ DEBUG ]" << std::endl;
+      debug();
 			std::cout << std::endl;
     case 2:
-			std::cout << "[ WARNING ]" << std::endl;
-			warning();
-			std::cout << std::endl;
-    case 1:
 			std::cout << "[ INFO ]" << std::endl;
       info();
 			std::cout << std::endl;
+    case 1:
+			std::cout << "[ WARNING ]" << std::endl;
+			warning();
+			std::cout << std::endl;
     case 0:
-			std::cout << "[ DEBUG ]" << std::endl;
-      debug();
+			std::cout << "[ ERROR ]" << std::endl;
+      error();
 			std::cout << std::endl;
 			break;
     default:

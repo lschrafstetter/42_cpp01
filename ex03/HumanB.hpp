@@ -6,7 +6,7 @@
 /*   By: lschrafs <lschrafs@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 19:17:13 by lschrafs          #+#    #+#             */
-/*   Updated: 2022/09/18 12:17:14 by lschrafs         ###   ########.fr       */
+/*   Updated: 2022/09/20 08:30:50 by lschrafs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class HumanB {
   HumanB(std::string name);
   ~HumanB();
 
-  std::string getName();
+  std::string getName() const;
 
   void setName(std::string name);
   void setWeapon(Weapon &weapon);
